@@ -1,0 +1,187 @@
+{
+	"name": "Robert Schulz",
+	"title": "Full Stack Entwickler",
+	"degree": "B.Eng.",
+	"tagline": "Verbindet Front-End-Kreativität mit Back-End-Power",
+	"buttonText": "Meine Arbeit ansehen",
+	"profile": "Begeisterter Full-Stack-Entwickler mit über 10 Jahren Erfahrung in der Software- und Webentwicklung, im Projektmanagement und im internationalen Engineering. Spezialisiert auf Next.js, TypeScript, TailwindCSS und PostgreSQL. Kombiniert starke technische Expertise mit einem agilen, benutzerzentrierten Ansatz, um skalierbare, moderne Lösungen zu liefern.",
+	"coreCompetencies": [
+		{
+			"title": "Front-End & Full Stack",
+			"skills": [
+				"Next.js (App Router)",
+				"React",
+				"TypeScript",
+				"TailwindCSS",
+				"Node.js",
+				"PostgreSQL",
+				"RESTful APIs"
+			]
+		},
+		{
+			"title": "Mobile & App Development",
+			"skills": [
+				"Kotlin (Android)",
+				"Swift (iOS)",
+				"Jetpack Navigation",
+				"MVVM",
+				"Retrofit",
+				"Firebase"
+			]
+		},
+		{
+			"title": "UI/UX & Design",
+			"skills": [
+				"Figma",
+				"Material Design",
+				"Rapid Prototyping",
+				"Wireframing"
+			]
+		},
+		{
+			"title": "Projektmanagement & Innovation",
+			"skills": [
+				"Agile Methoden (Scrum, Kanban)",
+				"Design Thinking",
+				"Internationale & interkulturelle Teamführung"
+			]
+		},
+		{
+			"title": "Tools & Plattformen",
+			"skills": [
+				"Git/GitHub",
+				"Android Studio",
+				"Xcode",
+				"Adobe CC (Photoshop, After Effects)",
+				"Midjourney",
+				"DALL·E"
+			]
+		},
+		{
+			"title": "Sprachen",
+			"skills": ["Deutsch (Muttersprache)", "Englisch (B2)"]
+		}
+	],
+	"professionalExperience": [
+		{
+			"role": "Full Stack & Frontend Development (Freelance)",
+			"company": "",
+			"period": "2022 – heute",
+			"description": [
+				"Entwicklung und Wartung moderner Webanwendungen mit Next.js, TypeScript, TailwindCSS und PostgreSQL.",
+				"Implementierung reaktionsfähiger UI-Layouts und Optimierung der Leistung für plattformübergreifende Barrierefreiheit.",
+				"Integration von RESTful-APIs und Back-End-Diensten zur Gewährleistung eines nahtlosen Datenflusses und der Sicherheit.",
+				"Arbeitet mit Kunden zusammen, um Anforderungen zu sammeln und funktionsreiche Lösungen rechtzeitig zu liefern."
+			]
+		},
+		{
+			"role": "CTO Web Development",
+			"company": "AL-ARABIYYA-INSTITUTE",
+			"period": "2017 – 2022",
+			"description": [
+				"Leitete die Konzeption und Umsetzung großer Webplattformen wie Modern-Standard-Arabic.net und TOAFL.com, die Tausende von Nutzern weltweit bedienen",
+				"Setzte datengesteuerte Methoden ein, um die Benutzererfahrung zu verbessern und die Lernergebnisse zu steigern",
+				"Beaufsichtigte den gesamten Projektlebenszyklus, von der Anforderungserfassung und dem Prototyping bis hin zur Bereitstellung und Benutzerschulung",
+				"Leitete funktionsübergreifende Teams mit Schwerpunkt auf agiler Entwicklung, Codeüberprüfungen und kontinuierlicher Verbesserung."
+			]
+		},
+		{
+			"role": "Technical Customer Service Manager",
+			"company": "Borsig ZM",
+			"period": "2016",
+			"description": [
+				"Bereitstellung technischer Lösungen und Beratung für komplexe Maschinen- und Anlagenbauprojekte",
+				"Koordinierte mit Kunden, Ingenieuren und Lieferanten, um technische Probleme effizient zu lösen"
+			]
+		},
+		{
+			"role": "Project Manager (Engineering)",
+			"company": "CRYOTEC Anlagenbau GmbH",
+			"period": "2012 – 2016",
+			"description": [
+				"Planung und Lieferung großer Industrieanlagen im Nahen Osten und in Europa, um einen termingerechten Projektabschluss zu gewährleisten.",
+				"Leitung internationaler Ingenieurteams, Durchführung von Inspektionen vor Ort und Durchführung technischer Abklärungen."
+			]
+		}
+	],
+	"education": [
+		{
+			"degree": "IT Specialist for App Development",
+			"institution": "Syntax Institut",
+			"period": "2023 – 2024",
+			"description": [
+				"Advanced modules in Android (Kotlin) and iOS (Swift) development, UX/UI design with Figma, and agile project management.",
+				"Sammelte praktische Erfahrung in den Bereichen Datenspeicherung (Room, Core Data), REST-Integrationen (Retrofit, URLSession) und moderne Architekturmuster (MVVM, Coroutines)."
+			]
+		},
+		{
+			"degree": "Bachelor in Wirtschaftsingenieurwesen (Chemie- und Umwelttechnik)",
+			"institution": "Hochschule Merseburg",
+			"period": "2009 – 2012",
+			"description": [
+				"Schwerpunkt auf Vermarktung von Investitionsgütern und Suchmaschinenoptimierung",
+				"Abschlussarbeit über Positionierungsstrategien für traditionelle Anlagenbauunternehmen",
+				"Kombinierte technische Expertise mit betriebswirtschaftlichen und Marketinggrundlagen zur Förderung von Innovationen"
+			]
+		}
+	],
+	"additionalInfo": {
+		"musician": "Leidenschaftlicher Musiker: Produziert und komponiert elektronische Musik unter dem Künstlernamen 'ARTEKK' und Indie-Pop-Rock unter dem Künstlernamen RobArte Soul.",
+		"international": "Internationale Erfahrung: Umfangreiche Arbeit im Nahen Osten; erfahren im Management kulturell vielfältiger Teams.",
+		"github": "github.com/WhatsMusic"
+	},
+	"contact": {
+		"title": "Nimm Kontakt auf",
+		"subtitle": "Ich würde mich freuen, von dir zu hören!",
+		"text": "Zögert nicht, über eine der untenstehenden Plattformen Kontakt mit mir aufzunehmen. Ich freue mich darauf, mit euch in Kontakt zu treten!",
+		"email": "ing.robert.schulz@gmail.com",
+		"github": "https://github.com/WhatsMusic",
+		"linkedin": "https://www.linkedin.com/in/whatsadvisor/"
+	},
+	"projects": {
+		"title": "Referenzen",
+		"subtitle": "Schau dir einige meiner aktuellen Projekte an!",
+		"items": [
+			{
+				"id": 1,
+				"title": "Modern-Standard-Arabic.net (Konzept)",
+				"description": "Große Webplattform, die während der CTO-Tätigkeit entwickelt wurde und Tausende von Benutzern weltweit bedient, die sich auf das Erlernen der arabischen Sprache konzentrieren",
+				"technologies": [
+					"Webtechnologien (Einzelheiten TBC)",
+					"Data-Driven UX",
+					"Platform Architecture"
+				],
+				"imageUrl": "/images/placeholder.jpg",
+				"repoUrl": null
+			},
+			{
+				"id": 2,
+				"title": "TOAFL.com (Konzept)",
+				"description": "Eine Online-Bewertungsplattform für Arabischkenntnisse, die auf Skalierbarkeit und Benutzerinteraktion ausgelegt ist.",
+				"technologies": [
+					"Web Technologies (Specifics TBC)",
+					"Assessment Tools",
+					"User Management"
+				],
+				"imageUrl": "/images/placeholder.jpg",
+				"repoUrl": null
+			},
+			{
+				"id": 3,
+				"title": "Freiberufliches Projektbeispiel",
+				"description": "Entwicklung einer modernen Webanwendung für einen Kunden unter Verwendung des neuesten Stacks mit Schwerpunkt auf Leistung und reaktionsschnellem Design.",
+				"technologies": [
+					"Next.js",
+					"TypeScript",
+					"TailwindCSS",
+					"PostgreSQL",
+					"REST API Integration"
+				],
+				"imageUrl": "/images/placeholder.jpg",
+				"liveUrl": null,
+				"repoUrl": null
+			}
+		],
+		"imgUrl": "/images/placeholder.jpg"
+	}
+}
