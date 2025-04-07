@@ -37,15 +37,4 @@ const SectionWrapper: React.FC<SectionWrapperProps> = async ({ id, title, subtit
     );
 };
 
-// Helper for animation delay (add this to tailwind.config.js or use inline styles if preferred)
-/* Add to tailwind.config.js theme.extend:
-   animationDelay: { // Requires a plugin like tailwindcss-animation-delay or custom utility
-      '100': '100ms',
-      '200': '200ms',
-      // ...
-   },
-*/
-// Or use inline styles in the component for simplicity if no plugin:
-// style={{ animationDelay: '100ms' }}
-
 export default SectionWrapper;

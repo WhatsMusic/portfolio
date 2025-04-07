@@ -1,4 +1,24 @@
 // data/cvData.ts
+export interface Dictionary {
+	name: string;
+	title: string;
+	degree: string;
+	tagline: string;
+	profile: string;
+	professionalExperience: ExperienceItem[];
+	education: EducationItem[];
+	skillCategories: SkillCategoryData[];
+	projects: Project[];
+	additionalInfo: AdditionalInfo;
+	contact: {
+		title: string;
+		subtitle: string;
+		text: string;
+		email: string;
+		github: string;
+		linkedIn?: string;
+	};
+}
 
 export interface cvData {
 	name: string;

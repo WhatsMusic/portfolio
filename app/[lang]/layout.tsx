@@ -40,14 +40,6 @@ export default async function RootLayout({
   return (
     <html lang={lang}>
       <body className={`${inter.className} bg-lightBg antialiased`}>
-        {/* <header className="w-full p-4 bg-gray-200 flex justify-between items-center">
-          <h1 className="text-xl font-bold">{dict.header.headline}</h1>
-          <nav>
-            <Link href={`/${lang}/home`} className="mr-4">{dict.nav.home}</Link>
-            <Link href={`/${lang}/cv`} className="mr-4">{dict.nav.cv}</Link>
-          </nav>
-        </header>
-        <main className="flex-grow flex flex-col m-auto p-4"> */}
         <div className="flex flex-col min-h-screen">
           <Navbar params={{
             lang: lang
