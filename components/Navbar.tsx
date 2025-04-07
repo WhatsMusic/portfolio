@@ -7,21 +7,15 @@ import { useEffect, useState } from 'react';
 import { Menu, X } from 'lucide-react'; // Using lucide-react for icons
 import LanguageSwitcher from './LanguageSwitcher';
 import { getDictionary } from '@/lang/dictionaries';
-
-
-
-interface Dictionary {
-    name: string;
-    // Add other properties of the dictionary here if needed
-}
+import { Dictionary } from '@/data/cvDatas';
 
 const Navbar = ({ params }: { params: { lang: 'de' | 'en' } }) => {
     const pathname = usePathname();
-    const lang = pathname.split('/')[1] as 'de' | 'en'; // Extrahiere die Sprache aus der URL
+    const lang = pathname.split('/')[1] as 'de' | 'en';
 
 
     const navLinks = [
-        { href: '/home', label: lang === 'de' ? 'Startseite' : 'Home' },
+        { href: '/', label: lang === 'de' ? 'Startseite' : 'Home' },
         { href: '/about', label: lang === 'de' ? 'Über uns' : 'About' },
         { href: '/experience', label: lang === 'de' ? 'Erfahrung' : 'Experience' },
         { href: '/education', label: lang === 'de' ? 'Bildung' : 'Education' },
@@ -48,10 +42,10 @@ const Navbar = ({ params }: { params: { lang: 'de' | 'en' } }) => {
     }
 
     return (
-        <div className="w-full flex flex-col items-center justify-between p-4 bg-white shadow-md sticky top-0 z-50">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <Link href={`/${lang}/home`} className="text-black font-bold text-xl">
-                    {dict && dict.name ? dict.name : 'Loading...'} {/* Ensure dict and dict.name are valid */}
+        <div className="w-full flex flex-col items-center justify-between md:space-y-5 space-y-2 bg-white shadow-md fixed py-2 z-50">
+            <div className="">
+                <Link href={`/${lang}`} className="text-black font-bold text-[1.3rem] lg:text-3xl py-6 lg:py-18">
+                    {dict && dict.name && dict.degree ? dict.degree + ' ' + dict.name : 'Loading...'}
                 </Link>
             </div>
             <div className="w-full flex flex-row justify-around items-center">
@@ -59,8 +53,8 @@ const Navbar = ({ params }: { params: { lang: 'de' | 'en' } }) => {
                     {navLinks.map((link) => (
                         <Link
                             key={link.href}
-                            href={`/${lang}${link.href}`} // Add language prefix to the href
-                            className={`px-3 py-2 rounded-md text-sm font-medium ${pathname === `/${params.lang}${link.href}`
+                            href={`/${lang}${link.href}`}
+                            className={`px-3 py-2 rounded-md text-base font-medium ${pathname === `/${params.lang}${link.href}`
                                 ? 'bg-secondary text-black'
                                 : 'text-mediumText hover:bg-gray-100 hover:text-darkText'
                                 } transition duration-150 ease-in-out`}
@@ -69,7 +63,9 @@ const Navbar = ({ params }: { params: { lang: 'de' | 'en' } }) => {
                         </Link>
                     ))}
 
-                    <div><LanguageSwitcher /></div>
+                    <div className="">
+                        <LanguageSwitcher />
+                    </div>
                 </div>
             </div>
             <div className="-mr-2 flex md:hidden">
@@ -90,8 +86,8 @@ const Navbar = ({ params }: { params: { lang: 'de' | 'en' } }) => {
                     {navLinks.map((link) => (
                         <Link
                             key={link.href}
-                            href={`/${params.lang}${link.href}`} // Add language prefix to the href
-                            onClick={() => setIsOpen(false)} // Close menu on click
+                            href={`/${params.lang}${link.href}`}
+                            onClick={() => setIsOpen(false)}
                             className={`block px-3 py-2 rounded-md text-base font-medium ${pathname === `/${params.lang}${link.href}`
                                 ? 'bg-secondary text-black'
                                 : 'text-mediumText hover:bg-gray-100 hover:text-darkText'
@@ -100,6 +96,10 @@ const Navbar = ({ params }: { params: { lang: 'de' | 'en' } }) => {
                             {link.label}
                         </Link>
                     ))}
+
+                </div>
+                <div className="block md:hidden">
+                    <LanguageSwitcher />
                 </div>
             </div>
         </div>

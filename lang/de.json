@@ -151,7 +151,7 @@
 					"Data-Driven UX",
 					"Platform Architecture"
 				],
-				"imageUrl": "/images/placeholder.jpg",
+				"imageUrl": "/images/msa_screenshot.jpg",
 				"repoUrl": null
 			},
 			{
@@ -181,7 +181,6 @@
 				"liveUrl": null,
 				"repoUrl": null
 			}
-		],
-		"imgUrl": "/images/placeholder.jpg"
+		]
 	}
 }

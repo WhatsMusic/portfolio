@@ -7,7 +7,7 @@ export default async function EducationPage({ params }: { params: Promise<{ lang
     const dict = await getDictionary(resolvedParams.lang ?? 'en');
 
     return (
-        <SectionWrapper title="Education & Certifications" className="bg-lightBg">
+        <SectionWrapper title="Education & Certifications" className="bg-lightBg mt-40">
             <div className="max-w-3xl mx-auto">
                 {dict.education.map((item, index) => (
                     <TimelineItem

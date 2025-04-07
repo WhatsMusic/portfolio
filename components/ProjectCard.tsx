@@ -8,17 +8,23 @@ import { ExternalLink, Github } from 'lucide-react';
 
 
 
+
 const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
+
     return (
         <Card className="flex flex-col h-full transition-transform transform hover:scale-[1.02] duration-300 ease-out">
             {project.imageUrl ? (
                 <div className="relative w-full h-48 overflow-hidden">
                     <Image
-                        src={project.imgUrl || '/images/placeholder.jpg'} // Direkt aus dem public-Verzeichnis
+                        src={project.imageUrl || '/images/placeholder.jpg'}
                         alt={project.title}
-                        fill
+                        width={1024}
+                        height={1536}
                         style={{ objectFit: 'cover' }}
+                        className="w-full h-full"
                     />
+
+
                 </div>
             ) : (
                 <div className="relative w-full h-48 bg-gray-200 flex items-center justify-center">

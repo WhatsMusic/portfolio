@@ -1,17 +1,14 @@
 
 import React from "react";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "@/app/globals.css";
-// import LanguageSwitcher from "@/components/LanguageSwitcher";
-// import Link from "next/link";
-// import { getDictionary } from "@/lang/dictionaries";
 import { Locale } from "@/lib/definitions";
 
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import SectionWrapper from "@/components/SectionWrapper";
 
-const inter = Inter({ subsets: ["latin"] });
+
 
 export const metadata: Metadata = {
   title: "Robert Schulz | Full Stack Developer",
@@ -39,17 +36,22 @@ export default async function RootLayout({
 
   return (
     <html lang={lang}>
-      <body className={`${inter.className} bg-lightBg antialiased`}>
-        <div className="flex flex-col min-h-screen">
+      <body className={`bg-lightBg antialiased`}>
+
+
+        <div className="flex flex-col">
           <Navbar params={{
             lang: lang
           }} />
-          <main className="flex-grow">
-            {children}
+          <main className="flex flex-col min-h-screen">
+            <Navbar params={{ lang: lang }} />
+            <div className="flex-grow">
+              <SectionWrapper title={""} className="bg-lightBg">
+                {children}
+              </SectionWrapper>
+            </div>
+            <Footer params={{ lang: lang }} />
           </main>
-          <Footer params={{
-            lang: lang
-          }} />
         </div>
       </body>
     </html>

@@ -10,8 +10,7 @@ export default async function ProjectsPage({ params }: { params: Promise<{ lang:
         <SectionWrapper
             title={dict.projects.title}
             subtitle={dict.projects.subtitle}
-            className="bg-white"
-        >
+            className="bg-white mt-40">
             <div className="text-center mb-8 bg-yellow-100 border border-yellow-300 text-yellow-800 px-4 py-3 rounded relative" role="alert">
                 <strong className="font-bold">Note: </strong>
                 <span className="block sm:inline">The projects listed below are placeholders based on CV information. Please update `data/cvData.ts` with actual project details, images, and links.</span>
@@ -29,7 +28,6 @@ export default async function ProjectsPage({ params }: { params: Promise<{ lang:
                             imageUrl: project.imageUrl || '/images/placeholder.jpg', // Direkt aus dem public-Verzeichnis
                             repoUrl: project.repoUrl || null, // Use null if no repo URL is provided
                             liveUrl: project.liveUrl || null, // Use null if no live URL is provided
-                            imgUrl: project.imageUrl || '/images/placeholder.jpg', // Direkt aus dem public-Verzeichnis
                         }}
                     />
                 ))}

@@ -1,15 +1,8 @@
 // data/cvData.ts
 export interface Dictionary {
 	name: string;
-	title: string;
 	degree: string;
-	tagline: string;
-	profile: string;
-	professionalExperience: ExperienceItem[];
-	education: EducationItem[];
-	skillCategories: SkillCategoryData[];
-	projects: Project[];
-	additionalInfo: AdditionalInfo;
+	title: string;
 	contact: {
 		title: string;
 		subtitle: string;
@@ -18,6 +11,7 @@ export interface Dictionary {
 		github: string;
 		linkedIn?: string;
 	};
+	skillCategories?: string[]; // Make skillCategories optional
 }
 
 export interface cvData {
@@ -78,8 +72,6 @@ export interface Project {
 	imageUrl: string;
 	repoUrl: string | null;
 	liveUrl: string | null;
-	period?: string;
-	imgUrl: string;
 }
 
 export const createCvDataFromDictionary = (dictionary: cvData): cvData => {

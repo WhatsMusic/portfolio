@@ -43,11 +43,10 @@ export function middleware(request: NextRequest) {
 		? pathname.substring(1)
 		: pathname;
 	return NextResponse.redirect(
-		new URL(`/${locale}/${sanitizedPathname || "home"}`, request.url)
+		new URL(`/${locale}/${sanitizedPathname}`, request.url)
 	);
 }
 
 export const config = {
-	// Matcher to exclude API routes and static files
-	matcher: ["/((?!api|_next/static|_next/image|favicon.ico).*)"]
+	matcher: ["/((?!_next/static|_next/image|favicon.ico|images/.*).*)"] // Schließt statische Dateien aus
 };

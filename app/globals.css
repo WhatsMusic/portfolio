@@ -6,3 +6,8 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+@media (max-width: 768px) {
+    .language-switcher select {
+        width: 100%; /* Volle Breite in der mobilen Ansicht */
+    }
+}

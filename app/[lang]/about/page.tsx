@@ -13,7 +13,7 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: 'd
 
     return (
         <>
-            <SectionWrapper title="Profile" className="bg-white">
+            <SectionWrapper title="Profile" className="bg-white mt-40">
                 <div className="max-w-4xl mx-auto text-center">
                     <p className="text-lg md:text-xl text-mediumText leading-relaxed">
                         {dict.profile}
@@ -22,7 +22,7 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: 'd
             </SectionWrapper>
 
             <SectionWrapper title="Core Competencies" className="bg-lightBg">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 top-40">
                     {dict.coreCompetencies.map((category: SkillCategoryData, index) => (
                         <SkillCategory key={index} category={category} />
                     ))}

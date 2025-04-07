@@ -10,7 +10,7 @@ export default async function ExperiencePageContent({ params }: { params: Promis
     const resolvedParams = await params; // Promise auflösen
     const dict = await getDictionary(resolvedParams.lang ?? 'en');
     return (
-        <SectionWrapper title="Professional Experience" className="bg-white">
+        <SectionWrapper title="Professional Experience" className="bg-white mt-40">
             <div className="max-w-3xl mx-auto">
                 {dict.professionalExperience.map((item, index) => (
                     <TimelineItem

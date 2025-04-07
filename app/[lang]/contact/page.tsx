@@ -11,7 +11,7 @@ export default async function ContactPage({ params }: { params: Promise<{ lang: 
         <SectionWrapper
             title={dict.contact.title}
             subtitle={dict.contact.subtitle}
-            className="bg-lightBg"
+            className="bg-lightBg mt-40"
         >
             <div className="max-w-3xl mx-auto text-center">
                 <p className="text-lg text-mediumText mb-10">
