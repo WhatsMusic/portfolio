@@ -5,7 +5,7 @@ import { getDictionary } from '@/lang/dictionaries';
 
 export default async function Page({ params }: { params: { lang: 'de' | 'en' } }) {
     const dict = await getDictionary(params.lang);
-    const profilBild = await import("./robertSchulz.jpg");
+    const profilBild = await import("./robert-schulz.jpg");
 
     return (
         <div>
