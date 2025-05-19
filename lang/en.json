@@ -126,7 +126,7 @@
 		}
 	],
 	"additionalInfo": {
-		"musician": "Passionate Musician: Produces and composes electronic music under the artist name \"ARTEKK” and Indie Pop Rock under the artist name RobArte Soul.",
+		"musician": "Passionate Musician: Produces Indie Pop Rock under the artist name RobArteSoul.",
 		"international": "International Experience: Extensive work in the Middle East; adept at managing culturally diverse teams.",
 		"github": "github.com/WhatsMusic"
 	},
@@ -144,42 +144,109 @@
 		"items": [
 			{
 				"id": 1,
-				"title": "Modern-Standard-Arabic.net",
-				"description": "Major web platform developed during CTO role, servicing thousands of users globally focused on learning Arabic.",
+				"title": "Tutitory.com",
+				"description": "AI-powered web app that generates custom tutorials on any topic within seconds. Focus on performance, GDPR-compliant data storage, and seamless PDF export.",
 				"technologies": [
-					"Web Technologies (Specifics TBC)",
-					"Data-Driven UX",
-					"Platform Architecture"
+					"Next.js 15",
+					"TypeScript",
+					"Tailwind CSS",
+					"HuggingFace API",
+					"Multi-Step AI Response"
 				],
-				"imageUrl": "/images/msa_screenshot.jpg",
-				"repoUrl": null
+				"imageUrl": "/images/projects/tutitory-ki-tutorial-generator.png",
+				"liveUrl": "https://tutitory.com",
+				"repoUrl": "https://github.com/WhatsMusic/Tutitory-Instant-Tutorials"
 			},
 			{
 				"id": 2,
-				"title": "TOAFL.com (Conceptual)",
-				"description": "An online assessment platform for Arabic language proficiency, designed for scalability and user engagement.",
+				"title": "Modern-Standard-Arabic.net",
+				"description": "WordPress-based platform focused on learning, teaching, and testing Modern Standard Arabic in higher education, serving over 50,000 users worldwide.",
 				"technologies": [
-					"Web Technologies (Specifics TBC)",
-					"Assessment Tools",
-					"User Management"
+					"WordPress",
+					"e-Learning",
+					"WordPress Customization",
+					"Responsive Design",
+					"Performance Optimization",
+					"SEO Optimization",
+					"Multilingual Support",
+					"User Authentication",
+					"User Roles and Permissions"
 				],
-				"imageUrl": "/images/placeholder.jpg",
-				"repoUrl": null
+				"imageUrl": "/images/msa_screenshot.jpg",
+				"repoUrl": null,
+				"liveUrl": "https://modern-standard-arabic.net"
 			},
 			{
 				"id": 3,
-				"title": "Freelance Project Example",
-				"description": "Developed a modern web application for a client using the latest stack, focusing on performance and responsive design.",
+				"title": "TOAFL.com",
+				"description": "A specialized online platform for CEFR-aligned Arabic language certification. Built for digital scalability, institutional partnerships, and global education applications.",
 				"technologies": [
-					"Next.js",
-					"TypeScript",
-					"TailwindCSS",
-					"PostgreSQL",
-					"REST API Integration"
+					"Proctoring",
+					"Video & Screen Capturing",
+					"WordPress",
+					"e-Testing",
+					"Performance Optimization",
+					"SEO Optimization",
+					"Multilingual Support",
+					"Digital Assessment Tools",
+					"User Management & Auth"
 				],
-				"imageUrl": "/images/placeholder.jpg",
-				"liveUrl": null,
+				"imageUrl": "/images/projects/toafl-screenshot-portfolio.png",
+				"repoUrl": null,
+				"liveUrl": "https://toafl.com"
+			},
+			{
+				"id": 4,
+				"title": "WhatsMusic.de",
+				"description": "Music blog and artist platform focused on music marketing, streaming awards, and design services. Provides visibility, professional tools, and editorial features for independent artists.",
+				"technologies": [
+					"WordPress",
+					"WooCommerce",
+					"PHP",
+					"MySQL",
+					"openAi API",
+					"cyanite.ai",
+					"audio analysis",
+					"spotify API"
+				],
+				"imageUrl": "/images/projects/WhatsMusic-AI-SongReview.png",
+				"liveUrl": "https://whatsmusic.de",
 				"repoUrl": null
+			},
+			{
+				"id": 5,
+				"title": "AiGENSCHAFT.DE (Beta Phase)",
+				"description": "AI-powered web app delivering a personal career profile and roadmap for beginners in 60 seconds. Emphasis on performance, GDPR-compliant data storage, and smooth PDF export.",
+				"technologies": [
+					"Next.js 15",
+					"TypeScript",
+					"Tailwind CSS",
+					"OpenAI API",
+					"Stripe API",
+					"Vercel Edge Functions",
+					"jsPDF",
+					".env File"
+				],
+				"imageUrl": "/images/projects/aigenschaft-screenshot.png",
+				"liveUrl": "",
+				"repoUrl": null
+			},
+			{
+				"id": 6,
+				"title": "Guitar Tuner (GitHub Repository)",
+				"description": "A modern guitar tuner implemented with Next.js. This project visualizes audio frequencies in real-time and displays the nearest note.",
+				"technologies": [
+					"Next.js 15",
+					"TypeScript",
+					"Tailwind CSS",
+					"Live-Frequenzvisualisierung",
+					"Nächstgelegener Ton anzeigen",
+					"Einstellbarer Grundton",
+					"Responsive Design"
+				],
+				"imageUrl": "/images/projects/guitar-tuner.png",
+				"liveUrl": "",
+				"repoUrl": "https://github.com/WhatsMusic/guitar-tuner"
 			}
 		]
 	}

@@ -126,7 +126,7 @@
 		}
 	],
 	"additionalInfo": {
-		"musician": "Leidenschaftlicher Musiker: Produziert und komponiert elektronische Musik unter dem Künstlernamen 'ARTEKK' und Indie-Pop-Rock unter dem Künstlernamen RobArte Soul.",
+		"musician": "Leidenschaftlicher Musiker: Produziert Indie-Pop-Rock unter dem Künstlernamen RobArteSoul.",
 		"international": "Internationale Erfahrung: Umfangreiche Arbeit im Nahen Osten; erfahren im Management kulturell vielfältiger Teams.",
 		"github": "github.com/WhatsMusic"
 	},
@@ -144,42 +144,109 @@
 		"items": [
 			{
 				"id": 1,
-				"title": "Modern-Standard-Arabic.net (Konzept)",
-				"description": "Große Webplattform, die während der CTO-Tätigkeit entwickelt wurde und Tausende von Benutzern weltweit bedient, die sich auf das Erlernen der arabischen Sprache konzentrieren",
+				"title": "Tutitory.com",
+				"description": "KI-gestützte Web-App, die in Sekunden maßgeschneiderte Tutorials zu beliebigen Themen generiert. Fokus auf Performance, DSGVO-konformer Datenspeicherung und nahtlosem PDF-Export.",
 				"technologies": [
-					"Webtechnologien (Einzelheiten TBC)",
-					"Data-Driven UX",
-					"Platform Architecture"
+					"Next.js 15",
+					"TypeScript",
+					"Tailwind CSS",
+					"HuggingFace API",
+					"Multi-Step AI Response"
 				],
-				"imageUrl": "/images/msa_screenshot.jpg",
-				"repoUrl": null
+				"imageUrl": "/images/projects/tutitory-ki-tutorial-generator.png",
+				"liveUrl": "https://tutitory.com",
+				"repoUrl": "https://github.com/WhatsMusic/Tutitory-Instant-Tutorials"
 			},
 			{
 				"id": 2,
-				"title": "TOAFL.com (Konzept)",
-				"description": "Eine Online-Bewertungsplattform für Arabischkenntnisse, die auf Skalierbarkeit und Benutzerinteraktion ausgelegt ist.",
+				"title": "Modern-Standard-Arabic.net",
+				"description": "WordPress-basierte Plattform mit Schwerpunkt auf dem Lernen, Lehren und Testen des modernen Standardarabisch in der Hochschulbildung, mehr als 50.000 Nutzer weltweit.",
 				"technologies": [
-					"Web Technologies (Specifics TBC)",
-					"Assessment Tools",
-					"User Management"
+					"WordPress",
+					"e-Learning",
+					"WordPress Customization",
+					"Responsive Design",
+					"Performance Optimization",
+					"SEO Optimization",
+					"Multilingual Support",
+					"User Authentication",
+					"User Roles and Permissions"
 				],
-				"imageUrl": "/images/placeholder.jpg",
-				"repoUrl": null
+				"imageUrl": "/images/msa_screenshot.jpg",
+				"repoUrl": null,
+				"liveUrl": "https://modern-standard-arabic.net"
 			},
 			{
 				"id": 3,
-				"title": "Freiberufliches Projektbeispiel",
-				"description": "Entwicklung einer modernen Webanwendung für einen Kunden unter Verwendung des neuesten Stacks mit Schwerpunkt auf Leistung und reaktionsschnellem Design.",
+				"title": "TOAFL.com",
+				"description": "Eine spezialisierte Online-Plattform zur CEFR-konformen Zertifizierung von Arabischkenntnissen. Entwickelt für digitale Skalierung, institutionelle Partnerschaften und globale Bildungsanwendungen.",
 				"technologies": [
-					"Next.js",
-					"TypeScript",
-					"TailwindCSS",
-					"PostgreSQL",
-					"REST API Integration"
+					"Proctoring",
+					"Video & Screen Capturing",
+					"WordPress",
+					"e-Testing",
+					"Performance Optimization",
+					"SEO Optimization",
+					"Multilingual Support",
+					"Digital Assessment Tools",
+					"User Management & Auth"
 				],
-				"imageUrl": "/images/placeholder.jpg",
-				"liveUrl": null,
+				"imageUrl": "/images/projects/toafl-screenshot-portfolio.png",
+				"repoUrl": null,
+				"liveUrl": "https://toafl.com"
+			},
+			{
+				"id": 4,
+				"title": "WhatsMusic.de",
+				"description": "Musikblog und Künstlerplattform mit Fokus auf Musikmarketing, Streaming-Auszeichnungen und Design-Services. Bietet unabhängigen Musikschaffenden Sichtbarkeit, professionelle Tools und redaktionelle Features.",
+				"technologies": [
+					"WordPress",
+					"WooCommerce",
+					"PHP",
+					"MySQL",
+					"openAi API",
+					"cyanite.ai",
+					"audio analysis",
+					"spotify API"
+				],
+				"imageUrl": "/images/projects/WhatsMusic-AI-SongReview.png",
+				"liveUrl": "https://whatsmusic.de",
 				"repoUrl": null
+			},
+			{
+				"id": 5,
+				"title": "AiGENSCHAFT.DE (Beta Phase)",
+				"description": "KI-gestützte Web-App, die Berufseinsteigern in 60 Sekunden ein persönliches Karriere-Profil samt Roadmap liefert. Fokus auf Performance, DSGVO-konformer Datenspeicherung und nahtlosem PDF-Export.",
+				"technologies": [
+					"Next.js 15",
+					"TypeScript",
+					"Tailwind CSS",
+					"OpenAI API",
+					"Stripe API",
+					"Vercel Edge Functions",
+					"jsPDF",
+					".env File"
+				],
+				"imageUrl": "/images/projects/aigenschaft-screenshot.png",
+				"liveUrl": "",
+				"repoUrl": null
+			},
+			{
+				"id": 6,
+				"title": "Gitarrenstimmgerät (GitHub Repository)",
+				"description": "Ein moderner Gitarrenstimmer, der mit Next.js implementiert wurde. Dieses Projekt visualisiert Audiofrequenzen in Echtzeit und zeigt den nächstgelegenen Ton an.",
+				"technologies": [
+					"Next.js 15",
+					"TypeScript",
+					"Tailwind CSS",
+					"Live-Frequenzvisualisierung",
+					"Nächstgelegener Ton anzeigen",
+					"Einstellbarer Grundton",
+					"Responsive Design"
+				],
+				"imageUrl": "/images/projects/guitar-tuner.png",
+				"liveUrl": "",
+				"repoUrl": "https://github.com/WhatsMusic/guitar-tuner"
 			}
 		]
 	}

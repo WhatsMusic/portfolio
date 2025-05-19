@@ -16,7 +16,7 @@ const Navbar = ({ params }: { params: { lang: 'de' | 'en' } }) => {
 
     const navLinks = [
         { href: '/', label: lang === 'de' ? 'Startseite' : 'Home' },
-        { href: '/about', label: lang === 'de' ? 'Über uns' : 'About' },
+        { href: '/about', label: lang === 'de' ? 'Über mich' : 'About' },
         { href: '/experience', label: lang === 'de' ? 'Erfahrung' : 'Experience' },
         { href: '/education', label: lang === 'de' ? 'Bildung' : 'Education' },
         { href: '/projects', label: lang === 'de' ? 'Projekte' : 'Projects' },

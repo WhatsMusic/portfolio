@@ -15,12 +15,12 @@ export default async function Page({ params }: { params: Promise<{ lang: 'de' | 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                         {/* Image */}
                         <div className="flex justify-center md:justify-end animate-fadeIn order-1 md:order-2">
-                            <div className="relative w-80 h-80 lg:w-[350px] lg:h-[350px] rounded-full overflow-hidden shadow-xl border-4 border-white">
+                            <div className="relative w-120 h-120 lg:w-[320px] lg:h-[420px] rounded-b-md overflow-hidden shadow-xl border-4 border-white">
                                 <Image
-                                    src={'/images/robertSchulz.jpg'}
+                                    src={'/images/robert-schulz.jpg'}
                                     alt={dict.name}
-                                    width={1941}
-                                    height={1941}
+                                    width={1894}
+                                    height={2651}
                                     style={{ objectFit: 'cover' }}
                                     className="w-full h-full"
                                 />
