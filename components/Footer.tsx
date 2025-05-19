@@ -1,6 +1,6 @@
 // components/Footer.tsx
 import Link from 'next/link';
-import { Github, Linkedin, Mail } from 'lucide-react'; // Assuming Mail icon
+import { Github, Linkedin, Mail, Globe } from 'lucide-react'; // Assuming Mail icon
 import { getDictionary } from '@/lang/dictionaries';
 
 async function Footer({ params }: { params: { lang: 'de' | 'en' } }) {
@@ -23,6 +23,11 @@ async function Footer({ params }: { params: { lang: 'de' | 'en' } }) {
                         <Link href={dict.contact.linkedin} target="_blank" rel="noopener noreferrer" className="text-mediumText hover:text-primary" aria-label="LinkedIn">
                             <Linkedin size={24} />
                         </Link>
+                    )}
+                    {dict.contact.website && (
+                        <a href={`https://robert-schulz.info/${params.lang}`} className="text-mediumText hover:text-primary" aria-label="Url">
+                            <Globe size={24} />
+                        </a>
                     )}
                 </div>
                 <p className="text-sm">
