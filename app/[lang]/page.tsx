@@ -3,11 +3,16 @@ import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { getDictionary } from '@/lang/dictionaries';
 
-export default async function Page({ params }: { params: { lang: 'de' | 'en' } }) {
-    const dict = await getDictionary(params.lang);
-    const profilBild = await import("./robert-schulz.jpg");
+
+
+
+export default async function Page({ params }: { params: Promise<{ lang: 'de' | 'en' }> }) {
+    const resolvedParams = await params; // Promise auflösen
+    const dict = await getDictionary(resolvedParams.lang ?? 'en');
+    const profilBild = await import("/public/robert-schulz.jpg");
 
     return (
+
         <div>
             <div className="bg-gradient-to-b from-white to-lightBg">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
@@ -32,7 +37,7 @@ export default async function Page({ params }: { params: { lang: 'de' | 'en' } }
                                 ))}
                             </div>
                             <div className="pt-4">
-                                <Link href={`/${params.lang}/projects`}
+                                <Link href={`/${resolvedParams.lang}/projects`}
                                     className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-black bg-secondary hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition duration-150 ease-in-out">
                                     {dict.buttonText}
                                     <ArrowRight className="ml-2 h-5 w-5" />
