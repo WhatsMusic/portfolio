@@ -248,6 +248,40 @@
 				"imageUrl": "/images/projects/guitar-tuner.png",
 				"liveUrl": "",
 				"repoUrl": "https://github.com/WhatsMusic/guitar-tuner"
+			},
+			{
+				"id": 7,
+				"title": "Openai Assistant API with Swift UI on iOS",
+				"description": "Pocket Assistant is a SwiftUI-based iOS application designed to interact with an AI assistant through text messages. The app allows users to send messages to the AI assistant and receive responses, creating a conversational experience. It leverages the SwiftOpenAI package to communicate with the OpenAI API, which powers the AI assistant's capabilities.",
+				"technologies": [
+					"SwiftUI",
+					"iOS",
+					"native App",
+					"openAi Assistant API",
+					"Messaging Interface",
+					"Thread Management",
+					"Asynchronous Operations"
+				],
+				"imageUrl": "/images/projects/ai-assistant-swiftui.png",
+				"liveUrl": "",
+				"repoUrl": "https://github.com/WhatsMusic/Pocket-Assistant/"
+			},
+			{
+				"id": 8,
+				"title": "Screen Capture & PiP-Recorder",
+				"description": "This project combines modern web technologies to enable advanced screen recording - including Picture-in-Picture (PiP) for webcam recordings. Only the browser environment is used.",
+				"technologies": [
+					"Next.js 15",
+					"Screen Capture",
+					"Picture-in-Picture",
+					"Audio-Mix",
+					"Client-/Server-Routing",
+					"Node.js",
+					"getDisplayMedia"
+				],
+				"imageUrl": "/images/projects/screencapture-pip-demo.png",
+				"liveUrl": "",
+				"repoUrl": "https://github.com/WhatsMusic/screen-capture"
 			}
 		]
 	}

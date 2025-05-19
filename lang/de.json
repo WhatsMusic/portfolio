@@ -248,6 +248,40 @@
 				"imageUrl": "/images/projects/guitar-tuner.png",
 				"liveUrl": "",
 				"repoUrl": "https://github.com/WhatsMusic/guitar-tuner"
+			},
+			{
+				"id": 7,
+				"title": "Openai Assistant API mit Swift UI auf iOS",
+				"description": "Pocket Assistant ist eine SwiftUI-basierte iOS-Anwendung, die für die Interaktion mit einem KI-Assistenten über Textnachrichten entwickelt wurde. Die App ermöglicht es Nutzern, Nachrichten an den KI-Assistenten zu senden und Antworten zu erhalten, wodurch eine Konversationserfahrung geschaffen wird. Sie nutzt das SwiftOpenAI-Paket zur Kommunikation mit der OpenAI-API, die die Fähigkeiten des KI-Assistenten unterstützt.",
+				"technologies": [
+					"SwiftUI",
+					"iOS",
+					"native App",
+					"openAi Assistant API",
+					"Messaging Interface",
+					"Thread Management",
+					"Asynchronous Operations"
+				],
+				"imageUrl": "/images/projects/ai-assistant-swiftui.png",
+				"liveUrl": "",
+				"repoUrl": "https://github.com/WhatsMusic/Pocket-Assistant/"
+			},
+			{
+				"id": 8,
+				"title": "Screen Capture & PiP-Recorder",
+				"description": "Dieses Projekt kombiniert moderne Web-Technologien, um eine fortschrittliche Bildschirmaufnahme zu ermöglichen – inklusive Picture-in-Picture (PiP) für Webcam-Aufnahmen. Dabei wird ausschließlich die Browserumgebung genutzt.",
+				"technologies": [
+					"Next.js 15",
+					"Screen Capture",
+					"Picture-in-Picture",
+					"Audio-Mix",
+					"Client-/Server-Routing",
+					"Node.js",
+					"getDisplayMedia"
+				],
+				"imageUrl": "/images/projects/screencapture-pip-demo.png",
+				"liveUrl": "",
+				"repoUrl": "https://github.com/WhatsMusic/screen-capture"
 			}
 		]
 	}
