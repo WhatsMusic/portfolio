@@ -2,14 +2,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { getDictionary } from '@/lang/dictionaries';
-
+import profilBild from '../../public/robert-schulz.jpg';
 
 
 
 export default async function Page({ params }: { params: Promise<{ lang: 'de' | 'en' }> }) {
     const resolvedParams = await params; // Promise auflösen
     const dict = await getDictionary(resolvedParams.lang ?? 'en');
-    const profilBild = await import("/public/robert-schulz.jpg");
+
 
     return (
 
@@ -47,9 +47,9 @@ export default async function Page({ params }: { params: Promise<{ lang: 'de' | 
 
                         {/* Image */}
                         <div className="flex justify-center md:justify-end animate-fadeIn">
-                            <div className="relative w-80 h-80 md:w-96 md:h-96 lg:w-[450px] lg:h-[450px] rounded-full overflow-hidden shadow-xl border-4 border-white">
+                            <div className="relative w-80 h-80 md:w-96 md:h-96 lg:w-[320px] lg:h-[450px] rounded-full overflow-hidden shadow-xl border-4 border-white">
                                 <Image
-                                    src={profilBild.default}
+                                    src={profilBild}
                                     alt="Profile"
                                     fill
                                     style={{ objectFit: "cover" }}
