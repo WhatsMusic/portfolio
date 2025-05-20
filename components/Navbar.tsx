@@ -81,7 +81,7 @@ const Navbar = ({ params }: { params: { lang: 'de' | 'en' } }) => {
                 </button>
             </div>
 
-            <div className={`${isOpen ? 'block' : 'hidden'} md:hidden`} id="mobile-menu">
+            <div className={`${isOpen ? 'block' : 'hidden'} md:hidden bg-white`} id="mobile-menu">
                 <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                     {navLinks.map((link) => (
                         <Link
