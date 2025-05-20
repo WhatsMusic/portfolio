@@ -23,7 +23,11 @@ export function getLocale(request: NextRequest): string | undefined {
 
 export async function middleware(request: NextRequest) {
 	const pathname = request.nextUrl.pathname;
-	let file;
+	// Determine the best locale
+	const sanitizedPathname = pathname.startsWith("/")
+		? pathname.substring(1)
+		: pathname;
+	const locale = getLocale(request) || i18n.defaultLocale;
 
 	// Check if the pathname already includes a valid locale
 	const localeInPathname = i18n.locales.find(
@@ -34,41 +38,27 @@ export async function middleware(request: NextRequest) {
 	// If a valid locale is already in the pathname, do nothing
 	if (localeInPathname) {
 		// Check if the pathname ends with a PDF file
-		if (pathname.endsWith("cv-robert-2025-" + localeInPathname + ".pdf")) {
-			try {
-				file = await fetch(pathname);
-				const buffer = await file.arrayBuffer();
-				return new Response(buffer, {
-					headers: {
-						"Content-Type": "application/pdf",
-						"Content-Transfer-Encoding": "binary",
-						"Content-Disposition": `attachment; filename="${pathname
-							.split("/")
-							.pop()}"`
-					}
-				});
-			} finally {
-				if (file) {
-					file.body?.cancel();
-				}
-			}
-		} else {
-			return null; // Stattdessen return null; aufrufen
+		if (
+			pathname.endsWith(".pdf") &&
+			!pathname.includes(`cv-robert-2025-${locale}.pdf`)
+		) {
+			return NextResponse.redirect(
+				new URL(`/cv-robert-2025-${locale}.pdf`, request.url)
+			);
 		}
+
+		return NextResponse.next();
 	}
 
-	// Determine the best locale
-	const locale = getLocale(request);
-
 	// Redirect to the locale-specific URL
-	const sanitizedPathname = pathname.startsWith("/")
-		? pathname.substring(1)
-		: pathname;
+
 	return NextResponse.redirect(
 		new URL(`/${locale}/${sanitizedPathname}`, request.url)
 	);
 }
 
 export const config = {
-	matcher: ["/((?!_next/static|_next/image|favicon.ico|images/.*).*)"] // Schließt statische Dateien aus
+	matcher: [
+		"/((?!_next/static|_next/image|favicon.ico|images/.*|.*\\.pdf$).*)"
+	]
 };
