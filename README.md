@@ -35,7 +35,7 @@ Ein moderner, mehrsprachiger Webauftritt, der meine Arbeit als Entwickler, kreat
 1. Repository klonen:
 
    ```bash
-   git clone https://github.com/dein-benutzername/portfolio.git
+   git clone https://github.com/WhatsMusic/portfolio.git
    ```
 
 2. Abhängigkeiten installieren:
