@@ -21,8 +21,9 @@ export function getLocale(request: NextRequest): string | undefined {
 	return matchLocale(languages, locales, i18n.defaultLocale);
 }
 
-export function middleware(request: NextRequest) {
+export async function middleware(request: NextRequest) {
 	const pathname = request.nextUrl.pathname;
+	let file;
 
 	// Check if the pathname already includes a valid locale
 	const localeInPathname = i18n.locales.find(
@@ -32,7 +33,28 @@ export function middleware(request: NextRequest) {
 
 	// If a valid locale is already in the pathname, do nothing
 	if (localeInPathname) {
-		return NextResponse.next();
+		// Check if the pathname ends with a PDF file
+		if (pathname.endsWith("cv-robert-2025-" + localeInPathname + ".pdf")) {
+			try {
+				file = await fetch(pathname);
+				const buffer = await file.arrayBuffer();
+				return new Response(buffer, {
+					headers: {
+						"Content-Type": "application/pdf",
+						"Content-Transfer-Encoding": "binary",
+						"Content-Disposition": `attachment; filename="${pathname
+							.split("/")
+							.pop()}"`
+					}
+				});
+			} finally {
+				if (file) {
+					file.body?.cancel();
+				}
+			}
+		} else {
+			return null; // Stattdessen return null; aufrufen
+		}
 	}
 
 	// Determine the best locale

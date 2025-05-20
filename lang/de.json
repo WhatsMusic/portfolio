@@ -4,6 +4,7 @@
 	"degree": "B.Eng.",
 	"tagline": "Verbindet Front-End-Kreativität mit Back-End-Power",
 	"buttonText": "Meine Arbeit ansehen",
+	"cvDownloadButtonText": "CV herunterladen",
 	"profile": "Begeisterter Full-Stack-Entwickler mit über 10 Jahren Erfahrung in der Software- und Webentwicklung, im Projektmanagement und im internationalen Engineering. Spezialisiert auf Next.js, TypeScript, TailwindCSS und PostgreSQL. Kombiniert starke technische Expertise mit einem agilen, benutzerzentrierten Ansatz, um skalierbare, moderne Lösungen zu liefern.",
 	"coreCompetencies": [
 		{

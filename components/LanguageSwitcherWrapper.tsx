@@ -2,8 +2,12 @@
 
 import LanguageSwitcher from "./LanguageSwitcher";
 
-const LanguageSwitcherWrapper = () => {
-    return <LanguageSwitcher />;
-};
+function LanguageSwitcherWrapper() {
+    return (
+        <div>
+            <LanguageSwitcher />
+        </div>
+    );
+}
 
 export default LanguageSwitcherWrapper;

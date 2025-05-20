@@ -42,7 +42,7 @@ const Navbar = ({ params }: { params: { lang: 'de' | 'en' } }) => {
     }
 
     return (
-        <div className="w-full flex flex-col items-center justify-between md:space-y-5 space-y-2 bg-white shadow-md fixed py-2 z-50">
+        <div className="w-full flex flex-col items-center justify-between  bg-white shadow-md sticky top-0 h-20 z-50">
             <div className="">
                 <Link href={`/${lang}`} className="text-black font-bold text-[1.3rem] lg:text-3xl py-6 lg:py-18">
                     {dict && dict.name && dict.degree ? dict.degree + ' ' + dict.name : 'Loading...'}

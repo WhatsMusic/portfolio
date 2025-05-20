@@ -2,7 +2,6 @@
 import React from 'react';
 import { SkillCategoryData } from '@/data/cvDatas';
 import { Card, CardContent } from './ui/card'; // Use Card components
-import { Badge } from './ui/badge'; // Use Badge component
 
 interface SkillCategoryProps {
     category: SkillCategoryData;
@@ -12,12 +11,14 @@ interface SkillCategoryProps {
 
 const SkillCategory: React.FC<SkillCategoryProps> = ({ category }) => {
     return (
-        <Card className="h-full transition-shadow duration-300 hover:shadow-lg">
+        <Card className="h-full border border-gray-200 shadow-sm">
             <CardContent>
-                <h3 className="text-xl font-semibold text-secondary mb-4">{category.title}</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">{category.title}</h3>
                 <div className="flex flex-wrap gap-2">
                     {category.skills.map((skill: string, index: number) => (
-                        <Badge key={index} variant="secondary">{skill}</Badge>
+                        <span key={index} className="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">
+                            {skill}
+                        </span>
                     ))}
                 </div>
             </CardContent>

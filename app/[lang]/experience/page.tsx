@@ -1,6 +1,5 @@
 // app/(site)/experience/page.tsx
-import SectionWrapper from '@/components/SectionWrapper';
-import TimelineItem from '@/components/TimelineItem';
+
 import { getDictionary } from '@/lang/dictionaries';
 
 
@@ -10,19 +9,19 @@ export default async function ExperiencePageContent({ params }: { params: Promis
     const resolvedParams = await params; // Promise auflösen
     const dict = await getDictionary(resolvedParams.lang ?? 'en');
     return (
-        <SectionWrapper title="Professional Experience" className="bg-white mt-40">
-            <div className="max-w-3xl mx-auto">
-                {dict.professionalExperience.map((item, index) => (
-                    <TimelineItem
-                        key={index}
-                        title={item.role}
-                        subtitle={item.company}
-                        period={item.period}
-                        description={item.description}
-                        isLast={index === dict.professionalExperience.length - 1}
-                    />
-                ))}
+        <section className="bg-white py-20 border-t border-gray-100">
+            <div className="max-w-5xl mx-auto px-4">
+                <h2 className="text-3xl font-semibold text-gray-900 mb-10">{dict.title}</h2>
+                <div className="space-y-10">
+                    {dict.professionalExperience.map((item, index) => (
+                        <div key={index}>
+                            <h3 className="text-xl font-medium text-gray-800">{item.role}</h3>
+                            <p className="text-sm text-gray-600">{item.company} &middot; {item.period}</p>
+                            <p className="mt-2 text-gray-700 leading-relaxed">{item.description}</p>
+                        </div>
+                    ))}
+                </div>
             </div>
-        </SectionWrapper>
+        </section>
     );
 }

@@ -8,7 +8,7 @@ interface CardProps {
 
 export const Card: React.FC<CardProps> = ({ children, className = '' }) => {
     return (
-        <div className={`bg-white rounded-lg shadow-md overflow-hidden ${className}`}>
+        <div className={`bg-white border border-gray-200 rounded-xl overflow-hidden ${className}`}>
             {children}
         </div>
     );
@@ -19,7 +19,7 @@ interface CardContentProps {
     className?: string;
 }
 export const CardContent: React.FC<CardContentProps> = ({ children, className = '' }) => {
-    return <div className={`p-4 md:p-6 ${className}`}>{children}</div>
+    return <div className={`p-6 ${className}`}>{children}</div>
 }
 
 // Add CardHeader, CardFooter etc. as needed

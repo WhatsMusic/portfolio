@@ -13,9 +13,9 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: 'd
 
     return (
         <>
-            <SectionWrapper title="Profile" className="bg-white mt-40">
+            <SectionWrapper title="Profile" className="bg-white py-20">
                 <div className="max-w-4xl mx-auto text-center">
-                    <p className="text-lg md:text-xl text-mediumText leading-relaxed">
+                    <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-light">
                         {dict.profile}
                     </p>
                 </div>
